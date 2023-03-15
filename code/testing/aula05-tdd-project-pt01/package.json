@@ -1,0 +1,13 @@
+{
+  "name": "aula05-tdd-project-pt01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "seed": "node ./seed"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
+}
