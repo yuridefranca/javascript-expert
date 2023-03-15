@@ -1,0 +1,15 @@
+{
+  "name": "aula04-coverage-e2e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "supertest": "^6.3.3"
+  },
+  "scripts": {
+    "test:dev": "npx mocha -w *.test.js",
+    "test:coverage": "npx nyc npx mocha *.test.js"
+  }
+}
