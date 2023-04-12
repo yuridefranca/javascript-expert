@@ -1,0 +1,30 @@
+{
+  "name": "demo02-esmodules-internacionalization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": "19.8.1"
+  },
+  "scripts": {
+    "start:dev": "npx nodemon --ignore databse.json --exec node src/index.js",
+    "test:coverage": "npx nyc npx mocha tests/*.test.js",
+    "test:watch": "npx mocha -w --parallel tests/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "chalk-table": "^1.0.2",
+    "draftlog": "^1.0.13"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "nyc": "^15.1.0",
+    "sinon": "^15.0.3"
+  }
+}
