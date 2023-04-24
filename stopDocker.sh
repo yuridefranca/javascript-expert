@@ -9,12 +9,13 @@ while getopts r: argument; do
 done
 
 function removeNodeModules() {
-	sudo rm -rf code/node_modules
+	sudo rm -rf code/coverage
 	sudo rm -rf code/dist
+	sudo rm -rf code/node_modules
 }
 
 function removeDockerImage() {
-	docker rmi "$PROJECT_NAME/nodejs"
+	docker rmi "$PROJECT_NAME/nodejs:latest"
 }
 
 docker-compose down -v

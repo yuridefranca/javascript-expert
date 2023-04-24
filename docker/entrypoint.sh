@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-chmod a+rw -R .
 
-npm i -g nodemon
+sudo chmod a+rw -R .
+yarn
 
 echo ""
 echo ""
