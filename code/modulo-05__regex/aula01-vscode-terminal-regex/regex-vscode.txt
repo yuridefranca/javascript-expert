@@ -1,0 +1,29 @@
+/^\d{3}.\d{3}.\d{3}-\d{2}$/gm
+
+123.123.123-12
+321.123.456-06
+200.300.400-50
+
+\________________________________________________/
+
+replace [.-] - vazio
+
+\________________________________________________/
+
+replace: ^(\w+),\s(\w+)$ 
+por: { "firstname": "$2", "lastName": "$1" }
+
+Serafim, Yuri
+Silva, Jhonson
+Smith, Joao
+
+\________________________________________________/
+
+replace: \[(.*?)\]\(([http|https].*?)\) 
+por: <a href="$2">$1</a>
+
+O [Yuri Serafim](https://www.github.com/yuridefranca) é muito lindo e você pode ver no [Instagram](https://www.instagram.com/yuridefranca)
+
+Ah e pode pesquisar também no [Linkedin](https://linkedin.com/yuridefranca) ou no [Google](https://google.com)
+
+vai que vai!
